@@ -1,5 +1,7 @@
 # API de Usuários em PHP
 
+Para esta aplicação foi utilizado o PHP 8.1
+
 ## Como iniciar?
 
 1. Habilite a extensão `extension=pdo_sqlite`, para isso retire o `;` do trecho `;extension=pdo_sqlite` no arquivo `php.ini` que se encontra no diretório de instalação do PHP. 
