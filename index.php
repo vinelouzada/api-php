@@ -9,6 +9,7 @@ $conexaoPDO = CriadorDeConexao::criarConexao();
 $repositorioDeUsuario = new UsuarioRepositorio($conexaoPDO);
 
 $url = $_SERVER['REQUEST_URI'];
+
 if (str_contains($url, "?")){
     $urlSeparada = explode("=", $url);
     $url = $urlSeparada[0];
@@ -27,21 +28,13 @@ switch ($url){
         );
 
         break;
-    case "/status":
-
-        RetornaJson::resposta(
-            [
-                "mensagem" => "API Funcionando"
-            ]
-        );
-
-        break;
 
     case "/usuarios":
         $usuarios = $repositorioDeUsuario->buscarTodosUsuarios();
         RetornaJson::resposta($usuarios);
 
         break;
+
     case "/usuarios?grupo":
         $usuariosFiltradosPorGrupo = $repositorioDeUsuario->buscarUsuariosPorGrupo($stringDeBusca);
 
