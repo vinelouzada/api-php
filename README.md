@@ -4,7 +4,7 @@ Para esta aplicação foi utilizado o PHP 8.1
 
 ## Como iniciar?
 
-1. Habilite a extensão `extension=pdo_sqlite`, para isso retire o `;` do trecho `;extension=pdo_sqlite` no arquivo `php.ini` que se encontra no diretório de instalação do PHP. 
+1. Habilite a extensão `extension=pdo_sqlite`, para isso, retire o `;` do trecho `;extension=pdo_sqlite` no arquivo `php.ini` que se encontra no diretório de instalação do PHP. 
 2. Suba um servidor web local, para isso, com o projeto aberto, no terminal digite o seguinte comando: `php -S localhost:8080`
 3. Acesse no seu navegador a seguinte url: `http://localhost:8080/`
 4. Acesse as seguintes rotas:
